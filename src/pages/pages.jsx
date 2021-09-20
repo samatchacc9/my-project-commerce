@@ -1,11 +1,11 @@
 import React from 'react';
 
-function test() {
+function pages() {
   return (
     <div>
-      <h1>Hello tets</h1>
+      <h1>Hi</h1>
     </div>
   );
 }
 
-export default test;
+export default pages;
