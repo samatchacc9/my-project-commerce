@@ -1,14 +1,14 @@
 export const MenuList = [
   {
     title: 'Home',
-    url: '/',
+    to: '/',
   },
   {
     title: 'Login',
-    url: '/login',
+    to: '/login',
   },
   {
     title: 'Register',
-    url: '/register',
+    to: '/register',
   },
 ];

@@ -2,19 +2,21 @@ import { useState } from 'react';
 import React from 'react';
 import './Navbar.css';
 import { MenuList } from './MenuList';
+import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   //state เปิดปิด hamburger
   const [clicked, setClicked] = useState(false);
   // Loop menu
-  const menuList = MenuList.map(({ url, title }, index) => {
+  const menuList = MenuList.map(({ to, title }, index) => {
     const icon = title === 'Home' ? 'fa-home' : title === 'Login' ? 'fa-sign-in-alt' : 'fa-user-plus';
     return (
       <li key={index}>
-        <a>
+        <NavLink exact to={to} activeClassName='active'>
           <i className={`fas ${icon} `} />
           &nbsp;{title}
-        </a>
+        </NavLink>
       </li>
     );
   });
@@ -26,9 +28,9 @@ function Navbar() {
 
   return (
     <nav>
-      <div className='logo'>
+      <Link to='/' className='logo'>
         Life<font>Great</font>
-      </div>
+      </Link>
 
       <div className='menu-icon' onClick={handleClick}>
         <i className={clicked ? 'fas fa-times' : 'fas fa-bars'}></i>

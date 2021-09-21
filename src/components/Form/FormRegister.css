@@ -1,0 +1,138 @@
+/* scale form */
+.form-register {
+  width: 720px;
+  background: #ffffff;
+  border-radius: 5px;
+  margin: 15px 0px;
+  border: #9d9e9e 1px solid;
+}
+/* header form */
+.form-register header {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0 0 10px;
+  border-bottom: 1px solid #bfbfbf;
+}
+.form-register .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #393e46;
+}
+.form-register form {
+  margin: 0px 25px;
+}
+form .dbl-field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.dbl-field .field {
+  height: 40px;
+  position: relative; /* ใส่คลุม absolute*/
+  width: calc(100% / 2 - 13px);
+}
+/* ขนาด input ภายใน ให้ยืดกว่าง*/
+form .field input,
+form .field select,
+form .field select option {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding: 0 18px 0 48px;
+  border: 1px solid #bfbfbf;
+  border-radius: 5px;
+  font-size: 16px;
+}
+/* placeholder input */
+form .field input::placeholder {
+  color: #bfbfbf;
+}
+/* placeholder  select */
+select:required:invalid {
+  color: #bfbfbf;
+}
+option[value=''][disabled] {
+  display: none;
+}
+option {
+  color: #393e46;
+}
+
+form .field input:focus,
+form .field select:focus {
+  border: 2px solid #a4ebf3;
+}
+.form-register form i {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  color: #bfbfbf;
+  font-size: 17px;
+  pointer-events: none; /*ทำให้ div click ไม่ได้*/
+  transform: translateY(-50%);
+}
+/* focus ไปที่ tag i ทุกตัว ให้มีสี  #0d6efd */
+form .field input:focus ~ i {
+  color: #a4ebf3;
+}
+
+form .button-area {
+  margin: 25px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.button-area button {
+  font-size: 18px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 5px;
+  /* background: #0d6efd ; */
+  padding: 13px 25px;
+}
+button.clear.fa-broom {
+  background: #fde7b4;
+  border: 1px solid #f9b208;
+  color: #393e46;
+}
+button.clear.fa-broom:hover {
+  background: #f9b208;
+  color: #fffdf9;
+}
+button.register.fa-folder-plus {
+  background: #bef5e0;
+  border: 1px solid #28df99;
+  color: #393e46;
+}
+button.register.fa-folder-plus:hover {
+  background: #28df99;
+  color: #fffdf9;
+}
+
+@media (max-width: 600px) {
+  .form-register header {
+    text-align: center;
+  }
+  form .dbl-field {
+    flex-direction: column;
+  }
+  .dbl-field .field {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  form .button-area {
+    flex-direction: column;
+  }
+  .button-area button {
+    width: 100%;
+    margin: 10px 0 0 0;
+  }
+}

@@ -1,0 +1,87 @@
+/* set ขนาด form */
+.form-login {
+  width: 390px;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  border: solid 1px #393e4691;
+}
+/* set ขนาดหัวข้อ */
+.form-login header {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0 0 10px;
+  border-bottom: 1px solid #bfbfbf;
+}
+/* ระยะขอบ form */
+.form-login form {
+  margin: 25px 25px;
+}
+/* จัดเรียง class คลุม input */
+.form-login form .dbl-field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* สร้างขอบเขตช่อง input ใหม่ */
+.form-login .dbl-field .field {
+  margin: 10px;
+  height: 40px;
+  position: relative;
+  width: calc(100% / 1 - 5px);
+}
+.form-login form .field input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding: 0 18px 0 48px;
+  border: 1px solid #bfbfbf;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.form-login form .field input::placeholder {
+  color: #bfbfbf;
+}
+.form-login form .field input:focus {
+  border: 2px solid #393e46;
+}
+.form-login form i {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  color: #bfbfbf;
+  font-size: 17px;
+  pointer-events: none; /*ทำให้ div click ไม่ได้*/
+  transform: translateY(-50%);
+}
+/* focus ไปที่ tag i ทุกตัว ให้มีสี  #0d6efd */
+.form-login form .field input:focus ~ i {
+  color: #393e46;
+}
+/* class ขอบเขตปุ่ม */
+.form-login form .button-area {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* class ตกแต่งภายในปุ่ม */
+.form-login .button-area button {
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  color: #393e46;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #28df99;
+  background-color: #bef5e0;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.form-login .button-area button:hover {
+  background: #28df99;
+  color: #fffdf9;
+}

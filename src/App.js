@@ -1,20 +1,25 @@
 import './App.css';
-import Card from './components/Card/Card';
+
 import Footer from './components/Footer/Footer';
+import FormLogin from './components/Form/FormLogin';
+import FormRegister from './components/Form/FormRegister';
 import Navbar from './components/Navbar/Navbar';
-import NavbarCustomer from './components/Navbar/NavbarCustomer';
-import Searchbar from './components/Searchbar/Searchbar';
-import Topic from './components/Topic/Topic';
+
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+import Home from './pages/Home';
 
 function App() {
   return (
     <>
-      <Navbar />
-      <NavbarCustomer />
-      <Searchbar />
-      <Topic title={'Products'} />
-      <Card />
-      <Footer />
+      <BrowserRouter>
+        <Navbar />
+        <Switch>
+          <Route path='/' exact component={Home} />
+          <Route path='/login' exact component={FormLogin} />
+          <Route path='/register' exact component={FormRegister} />
+        </Switch>
+        <Footer />
+      </BrowserRouter>
     </>
   );
 }
