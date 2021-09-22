@@ -7,6 +7,7 @@ import Navbar from './components/Navbar/Navbar';
 
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import Home from './pages/Home';
+import Cart from './components/Cart/Cart';
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
         </Switch>
         <Footer />
       </BrowserRouter>
+
+      {/* <Cart /> */}
     </>
   );
 }
