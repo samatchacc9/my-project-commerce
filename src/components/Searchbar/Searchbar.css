@@ -33,3 +33,12 @@
 i.icon-search {
   color: #c4c4c4;
 }
+
+@media screen and (max-width: 800px) {
+  .container-search {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin: 10px 0px 20px 0px;
+  }
+}

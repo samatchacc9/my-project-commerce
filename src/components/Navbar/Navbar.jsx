@@ -4,6 +4,7 @@ import './Navbar.css';
 import { MenuList } from './MenuList';
 import { NavLink } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import Searchbar from '../Searchbar/Searchbar';
 
 function Navbar() {
   //state เปิดปิด hamburger
@@ -36,7 +37,10 @@ function Navbar() {
         <i className={clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
       </div>
 
-      <ul className={clicked ? 'menu-list' : 'menu-list close'}>{menuList}</ul>
+      <ul className={clicked ? 'menu-list' : 'menu-list close'}>
+        <Searchbar />
+        {menuList}
+      </ul>
     </nav>
   );
 }

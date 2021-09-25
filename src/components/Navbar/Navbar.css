@@ -5,10 +5,12 @@ nav {
   justify-content: space-between;
   align-items: center;
   color: #fff;
-  position: relative;
-
+  /* position: relative; */
+  position: fixed;
   z-index: 99;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  top: 0;
 }
 
 /* icon */
@@ -81,6 +83,9 @@ nav {
 .logo font {
   color: #fff;
 }
+a.logo {
+  text-decoration: none;
+}
 
 .menu-list {
   list-style-type: none;
@@ -122,7 +127,7 @@ nav {
 @media screen and (max-width: 600px) {
 } */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .logo {
     font-size: 20px;
   }
@@ -132,7 +137,7 @@ nav {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .menu-icon {
     display: block;
   }

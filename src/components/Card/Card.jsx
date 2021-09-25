@@ -3,7 +3,7 @@ import './Card.css';
 
 function Card() {
   return (
-    <section className='container'>
+    <section className='container-card'>
       <div className='cards'>
         <div className='card'>
           <div className='image-section'>

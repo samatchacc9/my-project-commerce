@@ -1,8 +1,10 @@
 footer {
   margin-top: 5px;
-  bottom: 0px;
-  width: 100%;
+
   background: #a4ebf3;
+
+  bottom: 0;
+  width: 100%;
 }
 .main-content {
   display: flex;

@@ -1,13 +1,16 @@
 import './App.css';
 
 import Footer from './components/Footer/Footer';
-import FormLogin from './components/Form/FormLogin';
-import FormRegister from './components/Form/FormRegister';
 import Navbar from './components/Navbar/Navbar';
-
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import Home from './pages/Home';
-import Cart from './components/Cart/Cart';
+import Login from './pages/Login';
+import Register from './pages/Register';
+import CustomerOrder from './pages/CustomerOrder';
+import ShoppingCart from './pages/ShoppingCart';
+import Payment from './pages/Payment';
+
+// import Cart from './components/Cart/Cart';
 
 function App() {
   return (
@@ -15,14 +18,16 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Switch>
-          <Route path='/' exact component={Home} />
-          <Route path='/login' exact component={FormLogin} />
-          <Route path='/register' exact component={FormRegister} />
+          {/* <Route path='/' exact component={Home} /> */}
+          {/* <Route path='/login' exact component={Login} />*/}
+          <Route path='/register' exact component={Register} />
+          {/* <CustomerOrder /> */}
+          <Payment />
+          {/* <ShoppingCart /> */}
         </Switch>
+
         <Footer />
       </BrowserRouter>
-
-      {/* <Cart /> */}
     </>
   );
 }

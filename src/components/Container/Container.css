@@ -1,0 +1,17 @@
+.container-content {
+  min-height: 80vh;
+  margin-top: 50px;
+  /* margin-bottom: 10px; */
+  /* min-width: 100%; */
+  /* width: 900px; */
+  /* margin: 0 auto; */
+  background-color: #fff;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+}

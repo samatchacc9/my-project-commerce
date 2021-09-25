@@ -1,11 +1,11 @@
 import React from 'react';
-import Topic from '../Topic/Topic';
+// import Topic from '../Topic/Topic';
 import './Cart.css';
 
 function Cart() {
   return (
     <>
-      <Topic title='my cart' />
+      {/* <Topic title='my cart' /> */}
       <div className='container-cart'>
         <div className='cart'>
           <div className='products'>

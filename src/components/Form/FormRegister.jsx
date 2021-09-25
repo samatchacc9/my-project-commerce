@@ -110,11 +110,11 @@ function FormRegister() {
           </div>
           <div className='button-area'>
             <button type='reset' className='clear fas fa-broom'>
-              Clear
+              &nbsp;Clear
             </button>
 
             <button type='submit' className='register fas fa-folder-plus'>
-              Register
+              &nbsp;Register
             </button>
           </div>
         </form>
