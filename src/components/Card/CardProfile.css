@@ -1,0 +1,29 @@
+.button-edit-profile button {
+  text-align: center;
+  font-size: 14px;
+  border: none;
+  color: #000000;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 8px 20px;
+  width: 100%;
+  /* margin: 0px 15px; */
+  background-color: orange;
+}
+
+.button-edit-profile button:hover {
+  background-color: rgba(255, 166, 0, 0.699);
+}
+
+.info-login p {
+  font-weight: 600;
+}
+.info-login span,
+.text-detail span {
+  font-weight: 400;
+  color: #585757;
+}
+
+.text-detail p {
+  font-weight: 600;
+}

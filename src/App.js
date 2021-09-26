@@ -9,6 +9,10 @@ import Register from './pages/Register';
 import CustomerOrder from './pages/CustomerOrder';
 import ShoppingCart from './pages/ShoppingCart';
 import Payment from './pages/Payment';
+import CustomerProfile from './pages/CustomerProfile';
+import FormEditProfile from './components/Form/FormEditProfile';
+import CustomerBuyProduct from './pages/CustomerBuyProduct';
+import CustomerProductDetail from './pages/CustomerProductDetail';
 
 // import Cart from './components/Cart/Cart';
 
@@ -22,7 +26,11 @@ function App() {
           {/* <Route path='/login' exact component={Login} />*/}
           <Route path='/register' exact component={Register} />
           {/* <CustomerOrder /> */}
-          <Payment />
+          {/* <Payment /> */}
+          {/* <CustomerProfile /> */}
+          {/* <FormEditProfile /> */}
+          {/* <CustomerBuyProduct /> */}
+          <CustomerProductDetail />
           {/* <ShoppingCart /> */}
         </Switch>
 

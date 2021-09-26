@@ -34,7 +34,7 @@ function FormPayment() {
             <div class='field'>
               <select name='bank' id='bank' required>
                 <option value='' disabled selected>
-                  select bank
+                  Select Your Bank
                 </option>
                 <option value='scb'>SCB</option>
                 <option value='tmb'>TMB</option>

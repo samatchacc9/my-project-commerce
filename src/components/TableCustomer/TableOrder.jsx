@@ -24,13 +24,13 @@ function TableOrder() {
           </td>
           <td data-label='Summary'>800฿</td>
           <td data-label='Detail'>
-            <a href='#' class='button-create blue'>
-              <i class='fas fa-eye'></i>
+            <a href='#' className='button-create blue'>
+              <i className='fas fa-eye'></i>
             </a>
           </td>
           <td data-label='Cancle'>
-            <a href='#' class='button-create red'>
-              <i class='fas fa-window-close'></i>
+            <a href='#' className='button-create red'>
+              <i className='fas fa-window-close'></i>
             </a>
           </td>
         </tr>
@@ -43,13 +43,13 @@ function TableOrder() {
           </td>
           <td data-label='Summary'>650฿</td>
           <td data-label='Detail'>
-            <a href='#' class='button-create blue'>
-              <i class='fas fa-eye'></i>
+            <a href='#' className='button-create blue'>
+              <i className='fas fa-eye'></i>
             </a>
           </td>
           <td data-label='Cancle'>
-            <a href='#' class='button-create red disabled'>
-              <i class='fas fa-window-close'></i>
+            <a href='#' className='button-create red disabled'>
+              <i className='fas fa-window-close'></i>
             </a>
           </td>
         </tr>

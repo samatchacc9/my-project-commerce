@@ -1,82 +1,55 @@
-.form-payment {
-  border: 1px solid #393e46;
-  border-radius: 5px;
-  width: 700px;
+.edit-profile-scale {
+  min-height: 100vh;
+  display: flex;
+  padding: 0 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
 }
-.form-payment header {
+
+/* scale form */
+.form-edit-profile {
+  width: 720px;
+  background: #ffffff;
+  border-radius: 5px;
+  margin: 15px 0px;
+  border: 1px solid #000;
+}
+/* header form */
+.form-edit-profile header {
   text-align: center;
   font-size: 24px;
   font-weight: 600;
-  /* padding: 0 0 10px; */
-  /* border-bottom: 1px solid #bfbfbf; */
-  border-bottom: 2px solid #eeeeee;
+  padding: 0 0 10px;
+  border-bottom: 1px solid #bfbfbf;
 }
-.form-payment .title {
+.form-edit-profile .image {
+  margin-top: 5px;
+  text-align: center;
+}
+.form-edit-profile .image img {
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+}
+.form-edit-profile .title-edit {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 0px;
+  padding: 10px 10px;
   font-size: 18px;
   font-weight: 500;
   color: #393e46;
 }
-.form-payment form {
-  margin: 25px 25px;
-  /* border: 1px solid #393e46; */
+.form-edit-profile form {
+  margin: 0px 25px;
 }
-
-/*  */
-.summary {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border-bottom: 2px solid #eeeeee;
-}
-.bank {
-  /* border: 1px solid #000000; */
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  border-bottom: 2px solid #eeeeee;
-}
-.bank-text {
-  margin: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 2px solid #eeeeee;
-}
-.title {
-  /* margin-top: 20px;
-      margin-bottom: 30px; */
-
-  margin: 15px 30px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.summary-text h3,
-.summary-price h3 {
-  font-weight: 500;
-}
-
-.bank-title h3,
-.bank-detail h4 {
-  font-weight: 500;
-}
-
-.title h3 {
-  font-weight: 500;
-}
-
-/*  */
 form .dbl-field {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .dbl-field .field {
   height: 40px;
@@ -114,7 +87,7 @@ form .field input:focus,
 form .field select:focus {
   border: 2px solid #a4ebf3;
 }
-.form-payment form i {
+.form-edit-profile form i {
   position: absolute;
   left: 18px;
   top: 50%;
@@ -126,6 +99,13 @@ form .field select:focus {
 /* focus ไปที่ tag i ทุกตัว ให้มีสี  #0d6efd */
 form .field input:focus ~ i {
   color: #a4ebf3;
+}
+
+form .button-area {
+  margin: 25px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 #myfile {
@@ -152,49 +132,37 @@ form .field input:focus ~ i {
   /* box-shadow: 1px 0 1px 1px #6b4559; */
   outline: none;
 }
-
-form .button-area {
-  margin: 5px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
 .button-area button {
+  width: 100%;
   font-size: 18px;
   border: none;
-  color: #000000;
+  color: #ffffff;
   cursor: pointer;
   border-radius: 5px;
-  padding: 8px;
-  width: 100%;
-  margin: 0px 15px;
-  background-color: #a4ebf3;
+  /* background: #0d6efd ; */
+  padding: 13px 25px;
 }
-
-.button-area button.btn-clear {
-  background-color: orange;
+.button-area button.fa-pencil-alt {
+  background: #fde7b4;
+  border: 1px solid #f9b208;
+  color: #393e46;
 }
-
-.button-area button.btn-clear:hover {
-  background-color: rgba(255, 166, 0, 0.699);
+.button-area button.fa-pencil-alt:hover {
+  background: #f9b208;
+  color: #fffdf9;
 }
-.button-area button.btn-link {
-  background-color: rgba(61, 240, 61, 0.884);
+button.register.fa-folder-plus {
+  background: #bef5e0;
+  border: 1px solid #28df99;
+  color: #393e46;
 }
-
-.button-area button.btn-link:hover {
-  background-color: rgba(61, 240, 61, 0.541);
-}
-
-.button-area button .btn-clear:hover {
-  background: #0d6efd;
+button.register.fa-folder-plus:hover {
+  background: #28df99;
+  color: #fffdf9;
 }
 
 @media (max-width: 600px) {
-  /* .form-model {
-      width: 100%;
-    } */
-  .form-payment header {
+  .form-edit-profile header {
     text-align: center;
   }
   form .dbl-field {
@@ -202,21 +170,7 @@ form .button-area {
   }
   .dbl-field .field {
     width: 100%;
-    margin-bottom: 15px;
-  }
-
-  .bank {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .summary {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-bottom: 20px;
   }
 
   form .button-area {
@@ -224,6 +178,6 @@ form .button-area {
   }
   .button-area button {
     width: 100%;
-    margin-top: 5px;
+    margin: 10px 0 0 0;
   }
 }

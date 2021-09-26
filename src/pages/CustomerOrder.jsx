@@ -6,7 +6,7 @@ import '../components/Container/Container.css';
 function CustomerOrder() {
   return (
     <>
-      <Topic title={'orders'} />
+      <Topic title='orders' />
       <div className='container-content'>
         <TableOrder />
       </div>
