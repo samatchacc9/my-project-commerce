@@ -1,5 +1,5 @@
 import React from 'react';
-import TableOrder from '../components/TableCustomer/TableOrder';
+import TableOrderCustomer from '../components/Table/TableOrderCustomer';
 import Topic from '../components/Topic/Topic';
 import '../components/Container/Container.css';
 
@@ -8,7 +8,7 @@ function CustomerOrder() {
     <>
       <Topic title='orders' />
       <div className='container-content'>
-        <TableOrder />
+        <TableOrderCustomer />
       </div>
     </>
   );

@@ -1,0 +1,38 @@
+.image-form {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.form-width {
+  width: 800px;
+}
+
+.image-form img {
+  object-fit: cover;
+  width: 320px;
+  height: 320px;
+}
+
+/* .dbl-field .field {
+    height: 40px;
+    position: relative; 
+    width: calc(100% / 2 - 13px);
+  } */
+
+.label-block {
+  display: block;
+  /* font-weight: 500; */
+  margin-bottom: 5px;
+}
+
+@media (max-width: 400px) {
+  .image-form {
+    margin-top: 5px;
+    text-align: center;
+  }
+  .image-form img {
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+  }
+}

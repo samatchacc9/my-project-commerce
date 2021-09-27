@@ -13,6 +13,11 @@ import CustomerProfile from './pages/CustomerProfile';
 import FormEditProfile from './components/Form/FormEditProfile';
 import CustomerBuyProduct from './pages/CustomerBuyProduct';
 import CustomerProductDetail from './pages/CustomerProductDetail';
+import NavbarSeller from './components/Navbar/NavbarSeller';
+import SellerManageOrder from './pages/SellerManageOrder';
+import FormSearch from './components/Form/FormSearch';
+import FormEditOrder from './components/Form/FormEditOrder';
+import FormLabel from './components/Form/FormLabel';
 
 // import Cart from './components/Cart/Cart';
 
@@ -22,17 +27,25 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Switch>
+          {/* <FormSearch /> */}
           {/* <Route path='/' exact component={Home} /> */}
           {/* <Route path='/login' exact component={Login} />*/}
-          <Route path='/register' exact component={Register} />
+          {/* <Route path='/register' exact component={Register} /> */}
           {/* <CustomerOrder /> */}
           {/* <Payment /> */}
           {/* <CustomerProfile /> */}
           {/* <FormEditProfile /> */}
           {/* <CustomerBuyProduct /> */}
-          <CustomerProductDetail />
+          {/* <CustomerProductDetail /> */}
           {/* <ShoppingCart /> */}
+          {/* <NavbarSeller /> */}
+          {/* <SellerManageOrder /> */}
         </Switch>
+        {/* <FormSearch /> */}
+        {/* <SellerManageOrder /> */}
+        <FormEditOrder />
+
+        {/* <FormLabel /> */}
 
         <Footer />
       </BrowserRouter>

@@ -1,5 +1,5 @@
 import React from 'react';
-import Topic from '../Topic/Topic';
+// import Topic from '../Topic/Topic';
 import './FormEditProfile.css';
 
 function FormEditProfile() {

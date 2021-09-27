@@ -2,7 +2,7 @@
   min-height: 80vh;
   margin-bottom: 10px;
   width: 100%;
-  background-color: #fff;
+  /* background-color: #fff; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,8 +10,17 @@
 }
 
 .container-form {
-  margin-top: 70px;
+  margin-top: 90px;
   min-height: 80vh;
+  display: flex;
+  padding: 0 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.control-form {
+  /* margin-top: 70px;
+  min-height: 80vh; */
   display: flex;
   padding: 0 10px;
   justify-content: center;

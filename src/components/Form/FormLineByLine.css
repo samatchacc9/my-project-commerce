@@ -1,0 +1,31 @@
+form .dbl-field-byLine {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.dbl-field-byLine .field {
+  height: 40px;
+  position: relative; /* ใส่คลุม absolute*/
+  width: calc(100% / 1 - 13px);
+}
+
+.form-ByLine form i {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  color: #bfbfbf;
+  font-size: 17px;
+  pointer-events: none; /*ทำให้ div click ไม่ได้*/
+  transform: translateY(-50%);
+}
+
+@media (max-width: 600px) {
+  form .dbl-field-byLine {
+    flex-direction: column;
+  }
+  .dbl-field-byLine .field {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

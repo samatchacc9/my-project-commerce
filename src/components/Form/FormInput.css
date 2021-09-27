@@ -1,20 +1,28 @@
 /* scale form */
-.form-register {
-  width: 720px;
+
+.form-all {
+  /* width: 720px; */
   background: #ffffff;
   border-radius: 5px;
   margin: 15px 0px;
   border: #9d9e9e 1px solid;
 }
 /* header form */
-.form-register header {
+.form-all header {
   text-align: center;
   font-size: 24px;
   font-weight: 600;
   padding: 0 0 10px;
   border-bottom: 1px solid #bfbfbf;
 }
-.form-register .title-form {
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  margin: 5px;
+}
+
+.form-all .title-form {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,7 +31,13 @@
   font-weight: 500;
   color: #393e46;
 }
-.form-register form {
+
+.header-sub {
+  font-size: 20px;
+  color: #393e46;
+}
+
+.form-all form {
   margin: 0px 25px;
 }
 form .dbl-field {
@@ -35,7 +49,7 @@ form .dbl-field {
 .dbl-field .field {
   height: 40px;
   position: relative; /* ใส่คลุม absolute*/
-  width: calc(100% / 2 - 13px);
+  width: calc(100% / 1 - 13px);
 }
 /* ขนาด input ภายใน ให้ยืดกว่าง*/
 form .field input,
@@ -68,7 +82,7 @@ form .field input:focus,
 form .field select:focus {
   border: 2px solid #a4ebf3;
 }
-.form-register form i {
+.form-all form i {
   position: absolute;
   left: 18px;
   top: 50%;
@@ -117,7 +131,10 @@ button.register.fa-folder-plus:hover {
 }
 
 @media (max-width: 600px) {
-  .form-register header {
+  .form-all {
+    max-width: 100%;
+  }
+  .form-all header {
     text-align: center;
   }
   form .dbl-field {

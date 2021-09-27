@@ -8,7 +8,7 @@ function FormRegister() {
       <div className='form-register'>
         <header>Register</header>
         <form action='#'>
-          <div className='title'>Personal Data</div>
+          <div className='title-form'>Personal Data</div>
           <div className='dbl-field'>
             <div className='field'>
               <input type='text' placeholder='Enter your first name' />
@@ -51,7 +51,7 @@ function FormRegister() {
               </select>
             </div>
           </div>
-          <div className='title'>Address Data</div>
+          <div className='title-form'>Address Data</div>
           <div className='dbl-field'>
             <div className='field'>
               <select name='province' id='province' required>
@@ -97,7 +97,7 @@ function FormRegister() {
               <i className='fas fa-house-user'></i>
             </div>
           </div>
-          <div className='title'>Login Data</div>
+          <div className='title-form'>Login Data</div>
           <div className='dbl-field'>
             <div className='field'>
               <input type='text' placeholder='Enter your username' />
